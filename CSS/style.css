@@ -35,7 +35,7 @@ h5{
     font-family: 'Poppins', sans-serif;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300px;
     font-family: 'Poppins', sans-serif;
     padding: 4px;
@@ -102,14 +102,16 @@ p{
 .rockBackground {
     background-image: url(../Images/HM.png);
     max-height: 100%;
+    max-width: 100%;
 }
 .sectionHeading {
   text-align: left;
 }
-.nav {
+.CaseNav {
   background-color: #A0ACF2;
   text-align: center;
   align-content: center;
+  justify-content: center !important;
 }
 
 
@@ -186,7 +188,6 @@ li :hover{
     position: fixed;
     width: 100%;
     background-color:#A0ACF2 !important
-    background-size: cover;
     z-index: 10;
   }
   .navbar-nav{
@@ -209,7 +210,10 @@ li :hover{
   .customNav a{
     color: white !important;
   }
- 
+ .breadcrumb{
+   max-height: 40px;
+   background-color: white;
+ }
   .jumbotron {
     background-size: cover;
     background-repeat: no-repeat;
@@ -243,7 +247,12 @@ li :hover{
   .nav-link{
     color: white;
     padding: 10px;
+    
     display: inline-flex;
+  }
+  .sectionImage{
+    background-image: url(../Images/sections.png);
+    max-width: 100%;
   }
  
   .imageContainer{
@@ -271,16 +280,53 @@ li :hover{
   .cardContainer {
     margin-top: 20px;
     text-align: left;
+    object-fit: fill;
   }
   .card {
     margin: 0 auto;
   }
-  
+  .affinityMap{
+    background-image: url(../Images/The\ Fresh\ New\ HouseMate\ -\ Copy\ of\ Affinity\ Diagram\ \(1\).jpg);
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .homescreenWire{
+    max-width: -webkit-fill-available;
+    max-height: 100%;
+    object-fit: fill;
+    height: 10%;
+  }
+  .flexContainer {
+    display: flex;
+    padding: 10px;
+    object-fit: fill;
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+    object-fit: fill;
+  }
+  .featurePrio{
+    max-width: -webkit-fill-available;
+    max-height: 100%;
+    object-fit: fill;
+  }
+  .storyBoard{
+    max-width: -webkit-fill-available;
+    object-fit: fill;
+    height: 19%;
+    
+  }
+  .userFlow{
+    max-width: -webkit-fill-available;
+    object-fit: fill;
+
+  }
   
 
 /* jquery */
 
-.customNav :hover{
+.nav-link :hover{
     color: #F59836;
     opacity: 80%;
 }
